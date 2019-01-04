@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web App</title>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+</head>
+<body>
+    <header>
+        <h1 class="title">Web App</h1>
+          <div class="heading">
+            <img class="bell" src="../icons/icon-bell.svg" alt="icon bell" height="50" weight="50"/>
+            <img class="profile_avatar" src="../images/member-1.jpg" alt="profile avatar" height="50" weight="50"/>
+        </div>
+        <h4 class="name">Ashley Austin</h4>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><img src="../icons/icon-dashboard.svg" alt="dashboard icon" height="30" weight="30"/></li>
+            <li class="members"><img src="../icons/icon-members.svg" alt="members" height="30" weight="30"/></li>
+            <li class="visits"><img src="../icons/icon-visits.svg" alt="visitors" height="30" weight="30"/></li>
+            <li class="settings"><img src="../icons/icon-settings.svg" alt="settings" height="30" weight="30"/></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>dashboard</h2>
+        <input class="top-search" type="text" placeholder="Search">
+
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Alert
+        </div>
+        
+        <div class="linechart-buttons">
+            <ul>
+              <li class="hour">Hourly</li>
+              <li class="day">Daily</li>
+              <li class="week selected">Weekly</li>
+              <li class="month">Monthly</li>
+            </ul>
+          </div>
+
+        <div class="line-container">
+          <canvas id="line-chart"></canvas>
+        </div>
+
+        <div class="bar-container">
+           <canvas id="bar-chart"></canvas>
+        </div>
+
+        <div class="pie-container">
+           <canvas id="pie-chart"></canvas>
+        </div>
+       
+       
+        <div class="social">
+            <h1>Social Stats</h1>
+            <div class="widget">
+              <img src="../icons/icon-twitter.svg" height="30" weight="30"/>
+              <div class="details">
+                <h3>Twitter</h3>
+                <span>10,345</span>
+              </div>
+            </div>
+    
+
+            <div class="widget">
+              <img src="../icons/icon-facebook.svg" height="30" weight="30"/>
+              <div class="details">
+                <h3>facebook</h3>
+                <span>8,739</span>
+              </div>
+            </div>
+
+            <div class="widget">
+              <img src="../icons/icon-google-plus.svg" height="30" weight="30"/>
+              <div class="details">
+                <h3>google+</h3>
+                <span>2,530</span>
+              </div>
+            </div>
+        </div>
+
+        <div class="all-members">
+          <div class="new-members">
+              <h5>New members</h5>
+              <div class="container">
+              <div class="box-row">
+              <img class="photo" src="../images/member-1.jpg" alt="Victoria">
+              <div class="flex-left">
+                <div class="info">
+                  <h5>Victoria Chambers</h5>
+                  <a href="#">victoria80@exemple.com</a>
+                </div>
+                <span class="date">10/15/15</span>
+              </div>
+            </div>
+            <div class="box-row">
+              <img class="photo" src="../images/member-2.jpg" alt="Victoria">
+              <div class="flex-left">
+                <div class="info">
+                  <h5>Dale Byrd</h5>
+                  <a href="#">dale.byrd52@exemple.com</a>
+                </div>
+              <span class="date">10/15/15</span>
+              </div>
+            </div>
+              <div class="box-row">
+              <img class="photo" src="../images/member-3.jpg" alt="Victoria">
+              <div class="flex-left">
+                <div class="info">
+                  <h5>Dawn Wood</h5>
+                  <a href="#">dawn.wood.16@exemple.com</a>
+                </div>
+              <span class="date">10/15/15</span>
+              </div>
+            </div>
+              <div class="box-row">
+              <img class="photo" src="../images/member-4.jpg" alt="Victoria">
+              <div class="flex-left">
+                <div class="info">
+                  <h5>Dan Oliver</h5>
+                  <a href="#">dan.oliver82@exemple.com</a>
+                </div>
+              <span class="date">10/15/15</span>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="recent-activity">
+          <h5>Recent activity</h5>
+          <div class="container">
+            <div class="box-row">
+            <img class="photo" src="../images/member-1.jpg" alt="Victoria">
+              <div>
+                <h5>Victoria Chambers commented on YourApp's SEO Tips <br> 4 hours ago</h5>
+              </div>
+            <span class="arrow">></span>
+          </div>
+          <div class="box-row">
+            <img class="photo" src="../images/member-2.jpg" alt="Victoria">
+              <div>
+                <h5>Dale Byrd like the post Facebook's Changes for 2016 <br> 5 hours ago </h5>
+              </div>
+            <span class="arrow">></span>
+          </div>
+            <div class="box-row">
+            <img class="photo" src="../images/member-3.jpg" alt="Victoria">
+              <div>
+                <h5>Dawn Wood commented on Facebook's Changes for 2016 <br>5 hours ago </h5>
+              </div>
+            <span class="arrow">></span>
+          </div>
+            <div class="box-row">
+            <img class="photo" src="../images/member-4.jpg" alt="Victoria">
+              <div>
+                <h5>Dan Oliver posted YourApp's SEO Tips <br> 1 day ago </h5>
+              </div>
+            <span class="arrow">></span>
+          </div>
+        </div>
+          </div>
+        </div>
+          
+             <div class="form-setting-container">
+            <div class="form-container" id="message-user">
+              <h3 class="message-user">MESSAGE USER</h3>
+          
+              <div class="input-search">
+                <input type="text" name="searchForUser" id="search-user-field" placeholder="Search for user" required>
+              </div>
+              <textarea name="message-user" id="message-user-field" placeholder="Message for user" rows="6" required></textarea>
+          
+              <div class="message-submit">
+                <button id="message-submit" class="send-button" type="submit">Send</button>
+              </div>
+            </div>
+          
+            <div class="widget-container" id="settings">
+              <h3>SETTINGS</h3>
+              <div class="notifications">
+              <p>Send email notifications</p>
+              <label class="switch">
+                  <input type="checkbox"/>
+                  <span class="slider round"></span>
+                </label>
+          </div>
+              <div class="notifications">
+          <p>Set profile to public</p>
+          <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          
+        
+          
+          <select id="timezone">
+            <option>pacific standard</option>
+            <option>Eastern standard</option>
+          </select>
+        
+            <div class="buttons-container">
+              <button class="button-confirm" type="button" id="save-pref-button">Save</button>
+          
+              <button class="button-cancel" type="button" id="cancel-pref-button">Cancel</button>
+          
+             </div>
+             </div>
+            </div>
+
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
