@@ -1,9 +1,4 @@
-* {
-    box-sizing: border-box;
-}
-
- /* header styling */
- header {
+header {
     background-color: rgb(126, 126, 126);
     width: 100%;
     height:80px;
@@ -19,7 +14,16 @@
 .heading {
     float: right;
     margin-top: -80px;
-    margin-right: 110px;
+    margin-right: 150px;
+}
+
+.profile-avatar {
+    position: fixed;
+    display: block;
+}
+
+.bell {
+    padding-right: 50px;
 }
 
 .bell:hover {
@@ -33,61 +37,41 @@
 .name {
     float: right;
     margin-top: -65px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
-/* navigation bar */
 nav {
     background-color: rgb(48, 48, 48);
-    position: relative;
-    top: 10px;
+    width: 150px;
+    margin-top: -16px;
+    height: 1000px;
+
 }
 
-.dashboard, .dashboard-img {
-    margin-right: 63px;
-    position: relative;
-    right: -20px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-  
 li {
-    display: inline;
-    margin-right: 77px;
-    position: relative;
-    right: -5px;
-}
-  
-li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    display: block;
+    width: 60px;
+    height: 200px;
+    padding: 10px;
 }
 
-.linechart-buttons ul {
-    background-color: white;
+.members, .visits, .settings {
+    margin-top: -130px;
 }
 
-/* main content */
 
 h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: -980px;
+    margin-right: 800px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 input {
+    float: right;
     border: 1px solid #ccc;
-    width: 80%;
-    position: relative;
-    right: -40px;
+    width: 400px;
+    padding: 8px;
 }
 
 .top-search {
@@ -101,9 +85,9 @@ input {
     padding: 20px;
     background-color: rgb(126, 126, 126);
     color: white;
-    margin-top: 20px;
-    margin-left: 40px;
-    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 170px;
+    width: 1070px;
 }
 
 .closebtn {
@@ -119,24 +103,21 @@ input {
 
 .linechart-buttons {
     float: right;
-    width: 65%;
-    margin-top: 70px;
-    margin-right: -100px;
 }
 
 .linechart-buttons ul li {
-    display: inline-block;
-    font-size: 0.3em;
+display: inline-block;
+    padding: 5;
+    font-size: 0.8em;
     color: grey;
-    border-radius: 10px;
+    padding: 2px 10px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-right: 1px;
-    margin-left: -3px;
+    margin-right: 30px;
 }
 
-.linechart-buttons ul {
-    width: 57%;
-}
+
+
 
 .line-container {
     max-width: 85%;
@@ -145,15 +126,15 @@ input {
 
     
 #line-chart{
-    width: 80px;
+    width: 5px;
     position: absolute;
-    right: -30px;
-    top: 60px;
+    left: 170px;
+    top: 20px;
 }
 
 .bar-container {
     max-height: 200px;
-    max-width: 350px;
+    max-width: 600px;
     position: relative;
 }
     
@@ -162,8 +143,8 @@ input {
     height: 200px;
     width: 100px;
     position: absolute;
-    right: -10px;
-    top: 250px;
+    right: -150px;
+    top: 500px;
 }
 
 .pie-container {
@@ -177,22 +158,22 @@ input {
     height: 200px;
     width: 100px;
     position: absolute;
-    right: -10px;
+    right: -750px;
     top: 480px;
 }
 
 .social {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 780px;
     margin-left: 30px;
-    padding: 10px;
-    width: 100%;
+    padding: 50px;
+    width: 10px;
 }
 
-.stats{
-    margin-bottom: 30px;
-    margin-left: 70px;
+.social h1 {
+    margin-top: -20px;
+    margin-left: 90px;
 }
 
 .widget {
@@ -237,6 +218,9 @@ input {
     text-align: center;
     padding: 1em;
     font-size: 0.9em;
+    border: solid #d1d1d1 1px;
+    width: 80%;
+    margin: auto;
 }
 
 .box-row div {
@@ -258,19 +242,17 @@ a {
 }
 
 .arrow {
-    margin-left: 10px;
     font-size: 2em;
     color:#2e4568;
 }
 
 .info {
-    margin-left: -80px;
-    font-size: 10px;
+    margin-left: -150px;
 }
 
 .date {
     font-size: 1em;
-    margin-left: 150px;
+    margin-left: 250px;
     position: relative;
     top: -30px;
 }
@@ -279,7 +261,6 @@ a {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
-    margin-left: -40px;
 }
 
 div.input-search {
@@ -295,8 +276,7 @@ textarea#message-user-field {
     padding-left: 8px;
     border-radius: 5px;
     margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 63px;
     position: relative;
     top: 50px;
 }
@@ -306,8 +286,6 @@ textarea {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 button#message-submit.send-button {
     width:80%;
@@ -360,7 +338,7 @@ div.message-submit {
 .button-cancel {
     color: #FFF;
     display: block;
-    width: 50%;
+    width: 45%;
     padding: .75em;
     margin: 0 auto;
     background-color: #a6a7a8;
@@ -441,16 +419,12 @@ div.message-submit {
     border-top: solid #d1d1d1 .5px;
 }
 
-
-
 .new-members {
-   margin-left: -190px;
-   width: 85%;
+    width: 50%;
+    border-right: solid #d1d1d1 .5px;
 }
 
 .recent-activity {
-    margin-top: 750px;
-    margin-left: -710px;
     width: 50%;
 }
 
@@ -534,8 +508,8 @@ input:checked + .slider:after {
 .form-setting-container {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: baseline;
     border-top: solid #d1d1d1 .5px;
     margin-top: 2em;
 }
@@ -550,153 +524,6 @@ input:checked + .slider:after {
 .widget-container {
     width: 50%;
     padding-bottom: 36px;
+    border-left: solid #d1d1d1 .5px;
     padding-left: 35px;
 }
-
-@media (min-width: 768px) {
-    .heading {
-        margin-right: 150px;
-    }
-
-    .profile-avatar {
-        position: fixed;
-        display: block;
-    }
-    
-    .bell {
-        padding-right: 50px;
-    }
-
-    .name {
-        margin-right: 30px;
-    }
-
-    nav {
-        background-color: rgb(48, 48, 48);
-        width: 150px;
-        margin-top: -10px;
-        height: 1000px;
-    }
-
-    .dashboard {
-        margin-top: -130px;
-    }
-    
-    li {
-        display: block;
-        width: 60px;
-        height: 200px;
-        padding: 10px;
-    }
-    
-    
-    .members, .visits, .settings {
-        margin-top: -130px;
-    }
-
-    h2 {
-        margin-top: -980px;
-        margin-right: 800px;
-    }
-
-    input {
-        float: right;
-        border: 1px solid #ccc;
-        width: 400px;
-        padding: 8px;
-    }
-
-    .alert {
-        margin-bottom: 15px;
-        margin-left: 170px;
-        width: 1070px;
-    }
-
-    .linechart-buttons ul {
-        margin-top: -45px;
-        margin-left: 400px;
-    }
-    
-    .linechart-buttons ul li {
-        padding: 5;
-        font-size: 0.8em;
-        padding: 2px 10px;
-        border-radius: px;
-        cursor: pointer;
-    }
-
-    #line-chart {
-        width: 5px;
-        position: absolute;
-        left: 170px;
-        top: 20px;
-    }
-
-    .bar-container {
-        max-width: 600px;
-    }
-     
-    #bar-chart {
-        position: absolute;
-        right: -150px;
-        top: 500px;
-    }
-
-    #pie-chart {
-        position: absolute;
-        right: -750px;
-    }
-
-    .social {
-        display: flex;
-        flex-direction: row;
-        margin-left: 30px;
-        padding: 50px;
-    }
-
-    .box-row {
-        border: solid #d1d1d1 1px;
-        width: 80%;
-       margin: auto;
-    }
-
-    .info {
-        margin-left: -150px;
-    }
-    
-    textarea#message-user-field {
-        margin-left: 63px;
-    }
-
-    .new-members {
-        margin-right: 100px;
-        width: 50%;
-        border-right: solid #d1d1d1 .5px;
-    }
-
-    .recent-activity {
-        margin-top: 1px;
-        position: relative;
-        right: -230px;
-    }
-    
-
-    .form-setting-container {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-    }
-
-    div.input-search {
-        margin-right: 100px;
-    }
-    
-    .widget-container {
-        border-left: solid #d1d1d1 .5px;
-    }
-}
-
-
-
-
-
