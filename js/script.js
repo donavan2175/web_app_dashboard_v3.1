@@ -102,3 +102,5 @@ var piechart = new Chart(pie, {
         }
 });
 
+
+messageSubmit = document.querySelector("#message-submit");

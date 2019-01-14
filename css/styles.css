@@ -220,14 +220,33 @@ div.stats {
 
 .widget {
     border:2px solid;
-    border-radius: 5;
-    padding: 5px 30px;
+    border-radius: 5px;
+    padding: 15px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 70px;
     margin-right: 50px;
 }
+
+.widget-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: rgb(126, 126, 126);
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+   }
+  
+  .widget-img img {
+      width: 50px;
+      height: 50px;
+      fill: white;
+   }
+  
 
 .details {
     padding: 20px;
@@ -238,19 +257,6 @@ div.stats {
 .details span {
     font-size: 2.3em;
     line-height: 1;
-}
-
-.widget img {
-    width: 90px;
-    height: 50px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 250px;
-    background: url(URL) no-repeat;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    background-color: rgb(126, 126, 126);
 }
 
 .box-row {
@@ -559,7 +565,6 @@ input:checked + .slider:after {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    border-top: solid #d1d1d1 .5px;
     margin-top: 2em;
 }
 
@@ -742,9 +747,9 @@ input:checked + .slider:after {
     }
 
     .box-row {
-        border: solid #d1d1d1 1px;
+        border-bottom: solid #d1d1d1 1px;
         width: 80%;
-       margin: auto;
+        margin: auto;
     }
 
     .info {
@@ -772,6 +777,8 @@ input:checked + .slider:after {
         display: flex;
         flex-direction: row;
         align-items: baseline;
+        margin-right: -17px;
+        margin-top: -35px;
     }
 
     div.input-search {
