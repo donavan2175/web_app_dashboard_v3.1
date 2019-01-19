@@ -103,4 +103,14 @@ var piechart = new Chart(pie, {
 });
 
 
-messageSubmit = document.querySelector("#message-submit");
+$("#message-submit").click(function(e){
+        
+    e.preventDefault();
+if($("#search-user-field").val()=='' || $("#message-user-field").val()==''){
+   alert('you must fill out both fields');
+} else{
+   $("#message-user").submit();
+   alert("message sent successfully");
+}
+
+});
