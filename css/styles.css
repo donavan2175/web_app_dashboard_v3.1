@@ -32,6 +32,16 @@ main {
     padding: 20px;
 }
 
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 200px;
+    margin-bottom: 15px;
+}
+
 
 .heading {
     float: right;
@@ -582,6 +592,9 @@ input:checked + .slider:after {
 }
 
 @media (min-width: 768px) {
+    .dot {
+        margin-left: 585px;
+    }
 
     .heading {
         margin-right: 150px;
@@ -648,6 +661,15 @@ input:checked + .slider:after {
 }
 
 @media (min-width: 1024px) {
+
+    .top-search {
+        margin-top: -980px;
+    }
+
+    .dot {
+        margin-left: 990px;
+    }
+
     .heading {
         margin-right: 150px;
     }
@@ -711,7 +733,7 @@ input:checked + .slider:after {
 
     .linechart-buttons ul {
         margin-top: -900px;
-        margin-left: 300px;
+        margin-left: 250px;
     }
     
     .linechart-buttons ul li {
