@@ -662,10 +662,6 @@ input:checked + .slider:after {
 
 @media (min-width: 1024px) {
 
-    .top-search {
-        margin-top: -980px;
-    }
-
     .dot {
         margin-left: 990px;
     }
