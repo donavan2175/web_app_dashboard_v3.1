@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+canvas {
+    max-width: 100%;
+  }
+
 .grid {
     height: 100vh;
     width: 100%;
@@ -591,6 +595,12 @@ input:checked + .slider:after {
     padding-left: 35px;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 @media (min-width: 768px) {
     .dot {
         margin-left: 585px;
@@ -662,6 +672,15 @@ input:checked + .slider:after {
 
 @media (min-width: 1024px) {
 
+    .top-search {
+        display: inline-block;
+        border: 1px solid #ccc;
+        width: 400px;
+        padding: 8px;
+        position: absolute;
+        right: 0;
+    }
+    
     .dot {
         margin-left: 990px;
     }
@@ -712,14 +731,6 @@ input:checked + .slider:after {
         margin-right: 800px;
     }
 
-    input {
-        float: right;
-        border: 1px solid #ccc;
-        width: 400px;
-        padding: 8px;
-        position: relative;
-        left: -1px;
-    }
 
     .alert {
         margin-bottom: 15px;
