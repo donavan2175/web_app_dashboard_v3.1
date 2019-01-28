@@ -34,6 +34,8 @@ main {
 .title {
     color: white;
     padding: 20px;
+    position: relative;
+    top: 30px
 }
 
 .dot {
@@ -56,13 +58,13 @@ main {
 .bell {
     font-size:30px;
     margin:5px;
-   -webkit-transition: all 0.5s;
-   transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .bell:hover {
- font-size: 40px;
- transform: scale(1.5);
+    font-size: 40px;
+    transform: scale(1.5);
 }
 
 
@@ -109,6 +111,10 @@ li a {
 
 .linechart-buttons ul {
     background-color: white;
+}
+
+.linechart-buttons ul li {
+    margin-bottom: 35px;
 }
 
 /* main content */
@@ -168,12 +174,15 @@ input {
     cursor: pointer;
     margin-right: 1px;
     margin-left: -3px;
+    margin-top: -100px;
 }
 
 .linechart-buttons ul {
     width: 57%;
 }
-
+.traffic-line {
+    margin-left: 160px;
+}
 .line-container {
     max-width: 85vw;
     position: relative;
@@ -185,6 +194,11 @@ input {
     position: relative;
     right: -2.818vw;
     top: -7.636vw;
+}
+
+.traffic-bar {
+    margin-left: 140px;
+    margin-top: 100px;
 }
 
 .bar-container {
@@ -199,7 +213,12 @@ input {
     width: 6.061vw;
     position: relative;
     right: -1.212vw;
-    top: 16.97vw;
+    top: -10vw;
+}
+
+.mobile-pie {
+    margin-left: 130px;
+    margin-top: 100px;
 }
 
 .pie-container {
@@ -214,13 +233,13 @@ input {
     width: 6.061vw;
     position: relative;
     right: -0.606vw;
-    top: 40.091vw;
+    top: -10vw;
 }
 
 .social {
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
+    margin-top: 100px;
     margin-left: 30px;
     padding: 20px 0;
     width: 100%;
@@ -603,7 +622,7 @@ input:checked + .slider:after {
 
 @media (min-width: 768px) {
     .dot {
-        margin-left: 585px;
+        margin-left: 570px;
     }
 
     .heading {
@@ -629,10 +648,22 @@ input:checked + .slider:after {
         margin-left: 69px;
     }
 
+    .traffic-line {
+        margin-left: 80px;
+    }
 
+    .traffic-bar {
+        margin-left: 80px;
+        margin-bottom: 150px;
+
+    }
     #bar-chart {
         margin-top: -11vw;
         margin-left: 3vw;
+    }
+
+    .mobile-pie {
+        margin-bottom: 150px;
     }
 
     .pie-container {
@@ -646,7 +677,7 @@ input:checked + .slider:after {
     }
 
     .social {
-        margin-top: 400px;
+        margin-top: 50px
     }
 
     div.stats {
@@ -665,7 +696,7 @@ input:checked + .slider:after {
 
     .linechart-buttons ul li {
         margin-left: 42px;
-        margin-bottom: 35px;
+        margin-bottom: 60px;
     }
 
 }
@@ -751,11 +782,21 @@ input:checked + .slider:after {
         cursor: pointer;
     }
 
+    .traffic-line {
+        margin-left: 230px;
+        position: relative;
+        top: 20px;
+    }
+
     #line-chart {
         width: 0.303vw;
         position: relative;
         left: 13.303vw;
         top: 1.212vw;
+    }
+
+    .traffic-bar {
+        margin-left: 230px;
     }
 
     .bar-container {
@@ -766,7 +807,13 @@ input:checked + .slider:after {
     #bar-chart {
         position: relative;
         right: -10.879vw;
-        top: 21.212vw;
+        top: -1vw;
+    }
+
+    .mobile-pie {
+        margin-left: 800px;
+        position: relative;
+        top: -380px;
     }
 
     .pie-container {
@@ -777,7 +824,7 @@ input:checked + .slider:after {
     #pie-chart {
         position: relative;
         right: -62.424vw;
-        top: 11.939vw;
+        top: -33vw;
     }
     .social {
         display: flex;

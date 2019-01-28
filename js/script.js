@@ -1,4 +1,5 @@
 //line chart//
+Chart.defaults.global.legend.display = false;
 var context = $("#line-chart");
 var linechart = new Chart(context, {
     type: 'line',
@@ -12,10 +13,12 @@ var linechart = new Chart(context, {
               borderColor: 'rgb(126, 126, 126)',
           }
         ]
-    },
+        
+    }, 
 });
 
 //bar chart//
+
 var ctx = $("#bar-chart");
 
 
@@ -38,13 +41,11 @@ var ctx = $("#bar-chart");
         title: {
             display: true,
             position: "top",
-            text: "Daily Traffic",
             fontSize: 18,
             fontColor: "#111"
         },
         legend: {
-            display: true,
-            position: "bottom",
+            display: false,
             labels: {
                 fontColor: "#333",
                 fontSize: 16
@@ -84,7 +85,6 @@ var piechart = new Chart(pie, {
             title: {
                 display: true,
                 position: "top",
-                text: "Mobile Users",
                 fontSize: 18,
                 fontColor: "#111"
             },
