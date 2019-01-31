@@ -34,8 +34,8 @@ main {
 .title {
     color: white;
     padding: 20px;
-    position: relative;
-    top: 30px
+    text-align: center;
+    margin-top: -20px;
 }
 
 .dot {
@@ -46,13 +46,15 @@ main {
     display: inline-block;
     margin-left: 200px;
     margin-bottom: 15px;
+    position: relative;
+    left: 50px;
+    bottom: -15px;
 }
 
 
 .heading {
-    float: right;
-    margin-top: -80px;
-    margin-right: 110px;
+    margin-top: -40px;
+    margin-left: -80px;
 }
 
 .bell {
@@ -70,8 +72,8 @@ main {
 
 .name {
     float: right;
-    margin-top: -55px;
-    margin-right: 10px;
+    margin-top: -35px;
+    margin-right: 40px;
 }
 
 /* navigation bar */
@@ -625,12 +627,20 @@ input:checked + .slider:after {
         margin-left: 570px;
     }
 
+    .title {
+        float: left;
+        margin-top: 50px;
+    }
+
     .heading {
         margin-right: 150px;
+        position: relative;
+        top: 100px;
     }
 
     .name {
-        margin-right: 50px;
+        margin-right: 80px;
+        margin-top: 60px;
     }
 
     .dashboard, .dashboard-img {
@@ -650,6 +660,8 @@ input:checked + .slider:after {
 
     .traffic-line {
         margin-left: 80px;
+        position: relative;
+        top: 40px;
     }
 
     .traffic-bar {
@@ -726,11 +738,11 @@ input:checked + .slider:after {
     }
     
     .bell {
-        padding-right: 50px;
+        padding-right: 20px;
     }
 
     .name {
-        margin-right: 30px;
+        margin-right: 80px;
     }
 
     nav {
