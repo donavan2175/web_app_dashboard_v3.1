@@ -623,6 +623,7 @@ input:checked + .slider:after {
   }
 
 @media (min-width: 768px) {
+    
     .dot {
         margin-left: 570px;
     }
@@ -714,6 +715,7 @@ input:checked + .slider:after {
 }
 
 @media (min-width: 1024px) {
+    
 
     .top-search {
         display: inline-block;
@@ -749,9 +751,9 @@ input:checked + .slider:after {
         background-color: rgb(48, 48, 48);
         width: 150px;
         margin-top: -10px;
-        height: 1000px;
+        height: 2500px;
     }
-
+    
 
     .dashboard {
         margin-top: -130px;
@@ -770,7 +772,7 @@ input:checked + .slider:after {
     }
 
     h2 {
-        margin-top: -980px;
+        margin-top: -2460px;
         margin-right: 800px;
     }
 
@@ -782,7 +784,7 @@ input:checked + .slider:after {
     }
 
     .linechart-buttons ul {
-        margin-top: -900px;
+        margin-top: -2370px;
         margin-left: 250px;
     }
     
@@ -844,7 +846,7 @@ input:checked + .slider:after {
         margin-left: 30px;
         padding: 50px;
         position: relative;
-        top: -180px;
+        top: -480px;
     }
 
     div.stats {
@@ -864,8 +866,19 @@ input:checked + .slider:after {
     }
     
     textarea#message-user-field {
-        margin-left: 63px;
+        margin-left: 33px;
     }
+
+    div.message-submit {
+        margin-left: -25px;
+        margin-top: -20px;
+    }
+
+    .all-members {
+        margin-top: -450px;
+        margin-left: 150px;
+        width: 90%;
+    } 
     
     .new-members {
         margin-right: 700px;
@@ -884,8 +897,10 @@ input:checked + .slider:after {
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        margin-right: -17px;
-        margin-top: -35px;
+        margin-left: 222px;
+        position: relative;
+        top: -450px;
+        width: 80%;
     }
 
     div.input-search {
@@ -895,6 +910,7 @@ input:checked + .slider:after {
     .widget-container {
         border-left: solid #d1d1d1 .5px;
     }
+
 }
 
 
