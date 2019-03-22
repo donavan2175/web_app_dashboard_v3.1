@@ -897,12 +897,12 @@ input:checked + .slider:after {
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        margin-left: 222px;
+        margin-left: 221px;
         position: relative;
-        top: -450px;
+        bottom: 65px;
         width: 80%;
     }
-
+    
     div.input-search {
         margin-right: 65px;
     }
