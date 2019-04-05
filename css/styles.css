@@ -897,9 +897,9 @@ input:checked + .slider:after {
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        margin-left: 221px;
-        position: relative;
-        bottom: 65px;
+        margin-left: 222px;
+        position: absolute;
+        margin-top: -32px;
         width: 80%;
     }
     
